@@ -1,0 +1,85 @@
+{
+  "id": "ca259a30-4dc4-4e82-88b4-e0b364a466dd",
+  "version": "2.0",
+  "name": "Lab1(Google)",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "92774b73-35e1-49d7-bb6e-d68e9d83f95e",
+    "name": "test1",
+    "commands": [{
+      "id": "9f043dd4-91ba-4855-9b76-9158ad74d66f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1306ddcb-3fa2-4ddb-84f8-1b6660b9935c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80e6fee3-6851-4c02-b13e-ed9965f145b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e473a41a-0db5-4e5d-b73b-74a4ccd9c10a",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "lab1"
+    }, {
+      "id": "4c989f12-ce3f-4ae2-bf30-b0a521540411",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.gb_B",
+      "targets": [
+        ["css=.gb_B", "css:finder"],
+        ["xpath=//div[@id='gbwa']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.co.in/intl/en/about/products?tab=wh')]", "xpath:href"],
+        ["xpath=//header/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7132a491-6de3-4f1c-b555-d085ebdd85a9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.gb_B",
+      "targets": [
+        ["css=.gb_B", "css:finder"],
+        ["xpath=//div[@id='gbwa']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.co.in/intl/en/about/products?tab=wh')]", "xpath:href"],
+        ["xpath=//header/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "455111c3-da37-4013-8e1a-0f829c15a30d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["92774b73-35e1-49d7-bb6e-d68e9d83f95e"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

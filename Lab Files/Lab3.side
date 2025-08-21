@@ -1,0 +1,107 @@
+{
+  "id": "cf486d57-aa12-4d00-9751-81708b7f1dc1",
+  "version": "2.0",
+  "name": "Lab3",
+  "url": "https://tutorialsninja.com/demo/index.php",
+  "tests": [{
+    "id": "bbfc8817-cd91-477e-b749-5fcab5844b9a",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "c0d82bdd-51ad-4d1c-8a2f-20300ba32732",
+    "name": "test1",
+    "commands": [{
+      "id": "8b7416af-821e-4bbb-a429-94aabe8e4f03",
+      "comment": "",
+      "command": "open",
+      "target": "https://tutorialsninja.com/demo/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34d34293-9e20-4a41-bb9a-91d0ab83e633",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba480618-e585-4215-98b2-8999c10b4dd0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desktops",
+      "targets": [
+        ["linkText=Desktops", "linkText"],
+        ["css=.dropdown:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Desktops')]", "xpath:link"],
+        ["xpath=//nav[@id='menu']/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=product/category&path=20')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desktops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfccbf52-e97f-42ca-ac3e-e77bb6d03d87",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.open li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//nav[@id='menu']/div[2]/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=product/category&path=20_27')]", "xpath:href"],
+        ["xpath=//li/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57585b5c-bdbd-467b-ab2b-d0bf6403fe8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-sort",
+      "targets": [
+        ["id=input-sort", "id"],
+        ["css=#input-sort", "css:finder"],
+        ["xpath=//select[@id='input-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a813dc3f-535d-418a-ab17-211f8491cf53",
+      "comment": "",
+      "command": "select",
+      "target": "id=input-sort",
+      "targets": [],
+      "value": "label=Name (A - Z)"
+    }, {
+      "id": "908701b5-e7d0-4c0f-b461-dad6b1ba5fe9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-group .hidden-xs",
+      "targets": [
+        ["css=.button-group .hidden-xs", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div[2]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c434d1e-9fd5-4c92-b9cc-1ab083667e10",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,135.1999969482422)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "457e4004-fac0-4e8a-b1d1-2b4405ed522f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bbfc8817-cd91-477e-b749-5fcab5844b9a"]
+  }],
+  "urls": ["https://tutorialsninja.com/demo/index.php"],
+  "plugins": []
+}
